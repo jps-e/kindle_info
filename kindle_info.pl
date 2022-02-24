@@ -118,6 +118,8 @@ G000WN	Kindle Oasis 3 (2019) WiFi+4G (32GB)                         KOA3, KOA3G3
 G000WM	Kindle Oasis 3 (2019) WiFi (32GB)                            KOA3, KOA3W32   [Support added in KindleTool 1.7.0]
 G000WL	Kindle Oasis 3 (2019) WiFi (8GB)                             KOA3, KOA3W8    [Support added in KindleTool 1.7.0]
 G000WP	Kindle Oasis 3 (2019) WiFi+4G (32GB) India                   KOA3, KOA3G32IN [Support added in KindleTool 1.7.0]
+G001LG	Kindle PaperWhite 5 Signature Edition (2021)                 KPW5SE, PW5SE   [Support added in KindleTool 1.7.0]
+G001PX	Kindle PaperWhite 5 (2021)                                   KPW5, PW5       [Support added in KindleTool 1.7.0]
 EOD
 
 my @kindles = split /\n/, $lines;
