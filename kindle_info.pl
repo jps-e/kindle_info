@@ -102,6 +102,7 @@ G000T3	Kindle PaperWhite 4 (2018) WiFi+4G, 32GB (Japan)             PW4-32, PW4L
 G0016T	Twilight Blue Kindle PaperWhite 4 (2018) WiFi, 8GB           PW4, PW4TB      [Support added in KindleTool 1.7.0]
 G8S16T	Twilight Blue Kindle PaperWhite 4 (2018) WiFi, 8GB           PW4, PW4TB      [Support added in KindleTool 1.7.0]
 G0016Q	Twilight Blue Kindle PaperWhite 4 (2018) WiFi, 32GB          PW4, PW4LTB     [Support added in KindleTool 1.7.0]
+G8S16Q	Twilight Blue Kindle PaperWhite 4 (2018) WiFi, 32GB          PW4, PW4LTB     [Support added in KindleTool 1.7.0]
 G0016U	Plum Kindle PaperWhite 4 (2018) WiFi, 8GB                    PW4, PW4P       [Support added in KindleTool 1.7.0]
 G0016V	Sage Kindle PaperWhite 4 (2018) WiFi, 8GB                    PW4, PW4S       [Support added in KindleTool 1.7.0]
 G8S16V	Sage Kindle PaperWhite 4 (2018) WiFi, 8GB                    PW4, PW4S       [Support added in KindleTool 1.7.0]
