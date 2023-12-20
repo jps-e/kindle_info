@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-my ($model, $nicks, $notes, $prefix, $info, $y, $week, $day, $l);
+my ($model, $nicks, $notes, $prefix, $info, $y, $week, $day, $l, $key, $nm, $ss);
 my $sn = shift @ARGV;
 $sn =~ s/-//g; $sn =~ s/ //g;
 my $lines = <<'EOD';
@@ -131,8 +131,12 @@ G0923M	White Kindle Scribe (64GB)                                   KS          
 EOD
 
 my @kindles = split /\n/, $lines;
+if ($sn =~ /^G/i) { $nm = 3; } else { $nm =2; }
+$key = substr($sn, $nm, $nm) ;
 for (@kindles) { chomp;
   ($prefix, $info) = split /\t/;
+  $ss = substr($prefix, $nm, $nm);
+  next if length $ss < $nm;
   $model = substr($info, 0, 61); $model =~ s/\s+$//;
   if (length($info) > 61) {
     $nicks = substr($info, 61, 16);
@@ -140,7 +144,7 @@ for (@kindles) { chomp;
   $nicks =~ s/\s+$//;
   if (length($info) > 77) { $notes = substr($info, 77); }
   else { $notes = ''; }
-  last if $sn =~ /^$prefix/i;
+  last if $key =~ /$ss/i;
   if ($sn =~ /^G/i) { $l=6; } else { $l = 4; }
   $prefix = substr($sn, 0, $l) . ' not found.';
   ($model, $nicks, $notes) = ('','','');
